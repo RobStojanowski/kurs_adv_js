@@ -1,0 +1,25 @@
+1. napisz funkcję sumItems, która na podstawie listy zakupów, zwróci mi cenę w koszyku (wyślijcie kod na Slacku)
+
+```jsx
+const products = [
+  { name: "Bananas", pricePerUnit: 1.49, quantity: 2 },
+  { name: "Bread", pricePerUnit: 3.29, quantity: 1 },
+  { name: "Chocolate", pricePerUnit: 5, quantity: 2 },
+];
+
+function sumItems() {
+  // Tu napisz swój kod
+}
+
+sumItems(products) //powinno zwrócić 16.27
+```
+
+b. napisz TODO listę (w HTML/CSS/JS), która spełnia następujące wymagania.
+
+1. Stwórz listę TODO oraz formularz, umożliwiający dodawanie zadań. Postaraj się to zadanie ostylować
+2. Dodaj walidację do formularza, że treść zadania nie może być krótsza niż 2 znaki
+3. Zadanie powinno dodać się na ostatnim miejscu
+4. Przy każdym zadaniu powinna być ikonka checkbox, która pozwala stwierdzić czy zadanie jest zrealizowane. Zadanie zrealizowane powinno przekreślić tekst (nie usunąć)
+5. Przy każdym zadaniu powinna być też ikonka krzyżyka, która pozwoli usunąć dane zadanie
+6. *Zapisz wyniki do localStorage i odczytaj je po odswieżeniu (opcjonalnie)
+7. Zadanie wyślij jako link do GH
