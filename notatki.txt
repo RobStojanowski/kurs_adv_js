@@ -1,0 +1,65 @@
+_________________________________________________________________19.03.2022_____________________________________________________
+// ES5
+    // var ma zasięg loksykalny i można go nadpisać
+    var name = 'Damian'; // String
+    var age = 25; // Number
+    var isAdult = age >= 18; //Boolean (true/false)
+    var dogs = [a,b]; // Object (Array)
+    var person - { name: 'krzysiek', age: 40 } // Object
+
+    var cat = null;
+    var car = undefined; 
+
+// ES6+
+    // let ma zasięg blokowy i można go nadpisać
+    let age = 2 // deklaracja zmiennej typu zmiennego
+    const age = 2 // deklaracja zmiennej typu stałemgo
+
+// Programowanie funkcyjne 
+    //forEach
+    //map
+    //reduce
+    //filter
+
+    const shoes = [
+        {
+            comapny: 'nike',
+            price:399
+        }, 
+        {
+        comapny: 'addidas',
+        price:199}]
+
+    //forEach - przechodzenie przez elementy 
+        shoes.forEach((shoe) => {
+            console.log(shoe);
+        })
+
+    //map - przechodzenie przez elementy i zwracanie tego do nowej tablicy
+        const newArray = shoes.map(shoe => {
+            return parseFloat(shoe.price * 0.8;)
+        })
+
+    // filter - przechodzenie przez elementy i decydowanie o elementach w tab wynikowej
+        const shoesAbove200 = shoes.filter(shoe => {
+        return shoe.priece > 200;
+        })
+
+    // find
+        const nikeSHoes = shoes.find(shoe => {
+        return shoe.comapany === niekShoes
+        })
+
+    // reduce
+        let sum = 0;
+        shoes.forEach((shoe) =>{
+        sum = sum + shoe.price;
+        })
+
+        const sum2 = shoe.reduce((currentsum, shoe)=> {
+        return currentsum + shoe.priece;
+        ), 0}
+
+    // W domu do przejrzenia 
+    // Rest Operator [...array, ...aray2]
+    // Wkleic link do zadania z programowania funkjonalnego
