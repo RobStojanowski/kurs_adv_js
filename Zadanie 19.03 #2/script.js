@@ -51,6 +51,8 @@ form.addEventListener("submit", (event) => {
   input.value = "";
 });
 
+console.log(todos[0].name);
+
 list.addEventListener("click", (event) => {
   if (event.target.tagName === "INPUT") {
     // console.log(event.target); // konkretny klikniety checkbox
@@ -58,6 +60,18 @@ list.addEventListener("click", (event) => {
 
     // na jego rodzicu (czyli li) manipuluje klasa completed, ktora w CSS zmienia styl wyswietlenia
     selectedInput.parentElement.classList.toggle("completed");
+
+    let load = selectedInput.parentElement.innerText.slice(0, -2);
+    let search = load.substring(1);
+    console.log(search);
+
+    todos.forEach((todo) => {
+      console.log(todo.name);
+      if (todo.name == search) {
+        todo.checked = true;
+      }
+      console.log(todo);
+    });
   }
 
   if (event.target.tagName === "BUTTON") {
