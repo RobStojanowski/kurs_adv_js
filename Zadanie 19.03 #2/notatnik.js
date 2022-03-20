@@ -1,3 +1,68 @@
+//
+
+// windows - przegladarka (uzycie - fetch, localstorage)
+	//console.log(window);
+	//console.log(window.innerwidth)
+
+//
+	console.log(document);
+
+// wyszukiwanie elementów 
+	const title = document.querySelector('#title'); // łapanie elementu o id title
+	//ClassName #id .className dsa
+	console.log(title);
+
+	const titles = document.querySelectorAll('h1'); // zwraca tablice elementów h1
+	console.log(titles);
+
+// dodawanie elementów
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// old 2
+/*
 document.addEventListener("DOMContentLoaded", function(){
 	document.querySelector("button").onclick = function(){button();}
 });
@@ -21,10 +86,10 @@ function add(){
 function veryfication(task){
 	console.log(task);
 }
+*/
 
 
-
-
+// OLD
 	//let imie = document.querySelector("#imie").value;
 	//console.log(imie)
 	
